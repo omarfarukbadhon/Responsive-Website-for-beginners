@@ -29,13 +29,13 @@ nav{
     justify-content: space-between;
     padding: 0 8%;
     position: fixed;
-    top: -30px;
+    top: -40px;
     right: 0;
     left: 0;
 }
 
 nav img{
-    width: 50%;
+    width: 20%;
 }
 
 nav li{
@@ -81,6 +81,7 @@ header .header-title{
 
 .header-title h1{
     font-size: 2.5rem;
+    text-align: center;
     font-family: 'Lemon', serif;
     color: greenyellow;
 }
@@ -98,3 +99,115 @@ header .header-title{
     width: 60%;
     text-align: center;
 }
+
+/* Responsive of the page  */
+
+@media screen and (max-width: 699px) {
+    header{
+        background-position: 48% 100%;
+    }
+    .list{
+        display: none;
+    }
+    nav{
+        padding: 0 4%;
+        top: 0px;
+        gap: 8%;
+    }
+    nav img{
+        width: 50%;
+    }
+    header .header-title{
+        transform: translate(2%, 80%);
+        width: 95%;
+    }
+    
+    .header-title h1{
+        font-size: 1.5rem;
+    }
+    
+    .header-title h3{
+        font-size: 1.3rem;
+        margin: 15px auto;
+    }
+    
+    .header-title p{
+        font-size: 1.1rem;
+        width: 95%;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 999px) {
+    nav{
+        padding: 0 4%;
+        top: 0px;
+        gap: 8%;
+    }
+    
+    nav img{
+        width: 20%;
+    }
+    nav li a{
+        font-size: 1.1rem;
+    }
+    nav ul{
+        gap: 1.7rem;
+    }
+
+    header .header-title{
+        transform: translate(10%, 90%);
+        width: 80%;
+    }
+    
+    .header-title h1{
+        font-size: 2rem;
+    }
+    
+    .header-title h3{
+        font-size: 1.5rem;
+        margin: 15px auto;
+    }
+    
+    .header-title p{
+        font-size: 1.2rem;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1480px) {
+    nav{
+        padding: 0 6%;
+        top: 0px;
+        gap: 8%;
+    }
+    
+    nav img{
+        width: 20%;
+    }
+    nav li a{
+        font-size: 1.4rem;
+    }
+    nav ul{
+        gap: 2rem;
+    }
+
+    header .header-title{
+        transform: translate(20%, 90%);
+        width: 70%;
+    }
+    
+    .header-title h1{
+        font-size: 2.2rem;
+    }
+    
+    .header-title h3{
+        font-size: 1.7rem;
+        margin: 20px auto;
+    }
+    
+    .header-title p{
+        font-size: 1.35rem;
+        width: 70%;
+    }
+}
+
