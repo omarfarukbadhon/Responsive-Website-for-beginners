@@ -70,7 +70,7 @@ nav li:hover::after{
 
 header .header-title{
     position: absolute;
-    transform: translate(10%, 120%);
+    transform: translate(10%, 100%);
     display: flex;
     flex-direction: column;
     gap: 30%;
@@ -100,6 +100,25 @@ header .header-title{
     text-align: center;
 }
 
+.header-title button{
+    margin-top: 20px;
+    background-color: aqua;
+    border: none;
+    padding: 0.5% 1.5%;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.header-title button:hover{
+    background-color: rgb(255, 169, 64);
+}
+
+.header-title a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.7rem;
+}
+
 /* Responsive of the page  */
 
 @media screen and (max-width: 699px) {
@@ -118,22 +137,22 @@ header .header-title{
         width: 50%;
     }
     header .header-title{
-        transform: translate(2%, 80%);
+        transform: translate(2%, 60%);
         width: 95%;
     }
-    
     .header-title h1{
         font-size: 1.5rem;
     }
-    
     .header-title h3{
         font-size: 1.3rem;
         margin: 15px auto;
     }
-    
     .header-title p{
         font-size: 1.1rem;
         width: 95%;
+    }
+    .header-title button{
+        padding: 2% 6%;
     }
 }
 
@@ -172,6 +191,9 @@ header .header-title{
         font-size: 1.2rem;
         width: 80%;
     }
+    .header-title button{
+        padding: 2% 5%;
+    }
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1480px) {
@@ -208,6 +230,9 @@ header .header-title{
     .header-title p{
         font-size: 1.35rem;
         width: 70%;
+    }
+    .header-title button{
+        padding: 1% 3%;
     }
 }
 
