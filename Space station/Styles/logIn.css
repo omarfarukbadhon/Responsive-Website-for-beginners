@@ -63,3 +63,25 @@
     background-color: rgba(128, 183, 255, 0.3);
     cursor: pointer;
 }
+
+/* responsive for mobile */
+
+@media screen and (max-width: 576px) {
+    .container{
+        width: 90%;
+        transform: translate(5%, 40%);
+        padding: 20px 0;
+    }
+    .container h1{
+        font-size: 1.5rem;
+    }
+    
+    .container h3{
+        font-size: 1.2rem;
+    }
+    .container input[type="text"], input[type="email"], input[type="button"]{
+        width: 90%;
+        padding: 1.2rem 2rem;
+        font-size: 1.2rem;
+    }
+}
