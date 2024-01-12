@@ -1,0 +1,100 @@
+/* Link with the font family */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,500;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+/* Apply css style for all section */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Style Header section */
+
+header{
+    background-image: url('../Images/home\ background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    position: relative;
+}
+
+/* Style Navbar section */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    position: fixed;
+    top: -30px;
+    right: 0;
+    left: 0;
+}
+
+nav img{
+    width: 50%;
+}
+
+nav li{
+    list-style: none;
+}
+
+nav ul{
+    display: flex;
+    gap: 2.5rem;
+}
+
+nav li a{
+    text-decoration: none;
+    color: greenyellow;
+    font-size: 1.7rem;
+}
+
+nav li::after{
+    content: '';
+    height: 5px;
+    background-color: lightcoral;
+    display: block;
+    width: 0;
+    transition: all 0.5s;
+}
+
+nav li:hover::after{
+    width: 100%;
+}
+
+/* Style header title section */
+
+header .header-title{
+    position: absolute;
+    transform: translate(10%, 120%);
+    display: flex;
+    flex-direction: column;
+    gap: 30%;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.header-title h1{
+    font-size: 2.5rem;
+    font-family: 'Lemon', serif;
+    color: greenyellow;
+}
+
+.header-title h3{
+    font-size: 2rem;
+    font-family: 'Lemon', serif;
+    color: rgb(255, 124, 64);
+    margin: 25px auto;
+}
+
+.header-title p{
+    font-size: 1.5rem;
+    color: greenyellow;
+    width: 60%;
+    text-align: center;
+}
