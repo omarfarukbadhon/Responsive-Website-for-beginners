@@ -1,0 +1,65 @@
+/* Link with the font family */
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+/* Apply css style for all section */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lemon', serif;
+}
+
+/* Log In section style */
+
+.LogIn{
+    background-image: url('../Images/logIn\ Background.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+    background-color: rgba(139, 177, 149, 0.2);
+    width: 40%;
+    transform: translate(50%, 50%);
+    border-radius: 15px;
+    padding: 60px 0;
+}
+
+.container h1{
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+}
+
+.container h3{
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    margin: 20px auto;
+}
+
+.container a{
+    text-decoration: none;
+    text-align: center;
+}
+
+.container input[type="text"], input[type="email"], input[type="button"]{
+    width: 70%;
+    padding: 1.25rem 2rem;
+    outline: none;
+    display: block;
+    margin: 30px auto;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(202, 255, 216, 0.2);
+    color: white;
+    font-size: 1.25rem;
+    transition: all 0.3s;
+}
+
+.container input[type="button"]:hover{
+    background-color: rgba(128, 183, 255, 0.3);
+    cursor: pointer;
+}
