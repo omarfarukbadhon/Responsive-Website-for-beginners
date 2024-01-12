@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Sora', sans-serif;
+    box-sizing: border-box;
+}
+
+section{
+    background-color: aliceblue;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 100px 50px;
+    margin: 60px auto;
+    border-radius: 15px;
+}
+
+.left img{
+    padding: 15px;
+    background-color: rgb(241, 139, 13);
+    border-radius: 50%;
+    color: white;
+}
+
+.left h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 10px auto;
+}
+
+.left p{
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    max-width: 90%;
+    margin-bottom: 20px;
+}
+
+.left li{
+    margin-bottom: 15px;
+    background-image: url('../Images/Done_ring_round_fill.svg');
+    background-repeat: no-repeat;
+    list-style: none;
+    padding-left: 30px;
+}
+
+.left li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.25rem;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.right .google{
+    max-width: 70%;
+    background-color: beige;
+    border-radius: 15px;
+    padding: 35px;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1);
+}
+
+.right .one{
+    margin-left: 30%;
+}
+
+.right h2{
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.right p{
+    font-size: 1.2rem;
+    line-height: 2.25rem;
+}
+
+.right .image .logo{
+    width: 40%;
+}
+
+.right .image {
+    display: flex;
+    gap: 10px;
+}
+
+@media screen and (min-width: 1531px) and (max-width: 1780px){
+    section{
+        width: 90%;
+    }
+    .left h1{
+        font-size: 2rem;
+    }
+    
+    .left p{
+        font-size: 1.2rem;
+        line-height: 2rem;
+        max-width: 100%;
+    }
+    .left li a {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1530px){
+    section{
+        width: 90%;
+    }
+    .left h1{
+        font-size: 2rem;
+    }
+    
+    .left p{
+        font-size: 1.2rem;
+        line-height: 2rem;
+        max-width: 100%;
+    }
+    .left li a {
+        font-size: 1.1rem;
+    }
+    .right .google{
+        max-width: 80%;
+        padding: 25px;
+    }
+
+}
+
+@media screen and (min-width: 1050px) and (max-width: 1279px){
+    section{
+        width: 95%;
+    }
+    .left h1{
+        font-size: 1.5rem;
+    }
+    
+    .left p{
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        max-width: 100%;
+    }
+    .left li a {
+        font-size: 1.1rem;
+    }
+    .right .google{
+        max-width: 80%;
+        padding: 20px;
+    }
+    .right .one{
+        margin-left: 30%;
+    }
+    .right .two{
+        margin-right: 30%;
+    }
+
+}
+
+@media screen and (min-width: 641px) and (max-width: 1049px) {
+    section{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+    .right .one{
+        margin-left: 40%;
+        margin-bottom: 40px;
+    }
+    .right .two{
+        margin-right: 40%;
+    }
+    .right .google{
+        max-width: 60%;
+        padding: 20px;
+    }
+    .left h1{
+        font-size: 2rem;
+    }
+    
+    .left p{
+        font-size: 1.2rem;
+        line-height: 2rem;
+        max-width: 80%;
+    }
+    .left li a {
+        font-size: 1.1rem;
+    }
+    .right .image .logo{
+        width: 30%;
+    }
+    
+    .right .image {
+        gap: 7px;
+    }
+    
+    .right p{
+        font-size: 1.1rem;
+        line-height: 2rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    section{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+    .right .one{
+        margin-left: 10%;
+        margin-bottom: 40px;
+    }
+    .right .two{
+        margin-right: 10%;
+    }
+    .right .google{
+        max-width: 90%;
+        padding: 20px;
+    }
+    .left h1{
+        font-size: 2rem;
+    }
+    
+    .left p{
+        font-size: 1.2rem;
+        line-height: 2rem;
+        max-width: 100%;
+    }
+    .left li a {
+        font-size: 1.1rem;
+    }
+    .right .image .logo{
+        width: 25%;
+    }
+    
+    .right .image {
+        gap: 7px;
+    }
+    
+    .right p{
+        font-size: 1.1rem;
+        line-height: 1.75rem;
+    }
+}
+
+
