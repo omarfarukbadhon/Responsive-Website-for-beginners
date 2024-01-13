@@ -70,7 +70,7 @@ nav li:hover::after{
 
 header .header-title{
     position: absolute;
-    transform: translate(10%, 100%);
+    transform: translate(10%, 80%);
     display: flex;
     flex-direction: column;
     gap: 30%;
@@ -137,7 +137,7 @@ header .header-title{
         width: 50%;
     }
     header .header-title{
-        transform: translate(2%, 60%);
+        transform: translate(2%, 80%);
         width: 95%;
     }
     .header-title h1{
@@ -214,7 +214,7 @@ header .header-title{
     }
 
     header .header-title{
-        transform: translate(20%, 90%);
+        transform: translate(20%, 70%);
         width: 70%;
     }
     
