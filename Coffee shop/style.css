@@ -63,6 +63,11 @@
     border: 2px solid rgb(190, 190, 190);
     border-radius: 25px;
     cursor: pointer;
+    transition: all 0.5s;
+}
+
+.left-container button:hover{
+    background: linear-gradient(to right, #552c01, rgb(172, 147, 128));
 }
 
 .right-container{
@@ -104,18 +109,6 @@
 .navbar li:nth-child(4):hover ~ .slider{
     right: 272px;
 }
-
-/* .navbar li:first-child{
-    border-top: 4px solid #552c01;
-    border-radius: 0 0 30px 30px;
-    background-color: rgba(255, 255, 255, 0.4);
-}
-
-.navbar li:hover{
-    border-top: 4px solid #552c01;
-    border-radius: 0 0 30px 30px;
-    background-color: rgba(255, 255, 255, 0.4);
-} */
 
 .navbar ul a{
     text-decoration: none;
