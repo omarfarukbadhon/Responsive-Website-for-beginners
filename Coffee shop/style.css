@@ -2,49 +2,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.container{
+.container {
     position: relative;
     width: 100%;
     height: 100vh;
 }
 
-.content-container{
+.content-container {
     display: flex;
     justify-content: space-between;
 }
 
-.left-container{
+.left-container {
     background: #331a00;
     width: 50%;
     height: 100vh;
 }
 
-.left-container .logo{
+.left-container .logo {
     margin-top: 1.5rem;
     margin-left: 10rem;
 }
 
-.left-container .content{
+.left-container .content {
     text-align: left;
     color: white;
     margin-top: 10rem;
     margin-left: 5rem;
 }
 
-.left-container h1{
+.left-container h1 {
     font-size: 6rem;
     margin-bottom: 2rem;
     font-family: 'Rubik Scribble', system-ui;
 }
 
-.left-container p{
+.left-container p {
     font-size: 1.5rem;
     text-align: justify;
     max-width: 85%;
@@ -53,7 +53,7 @@
     font-family: 'Courgette', cursive;
 }
 
-.left-container button{
+.left-container button {
     padding: 0.8rem 2.5rem;
     background: linear-gradient(to right, rgb(172, 147, 128), #552c01);
     color: white;
@@ -65,17 +65,17 @@
     transition: all 0.5s;
 }
 
-.left-container button:hover{
+.left-container button:hover {
     background: linear-gradient(to right, #552c01, rgb(172, 147, 128));
 }
 
-.right-container{
+.right-container {
     background: #996633;
     width: 50%;
     height: 100vh;
 }
 
-.navbar ul{
+.navbar ul {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -84,11 +84,11 @@
     position: relative;
 }
 
-.navbar li{
+.navbar li {
     padding: 1.5rem 1.5rem;
 }
 
-.navbar .slider{
+.navbar .slider {
     border-top: 4px solid #552c01;
     border-radius: 0 0 50px 50px;
     background-color: rgba(255, 255, 255, 0.4);
@@ -99,24 +99,26 @@
     right: 601px;
 }
 
-.navbar li:nth-child(2):hover ~ .slider{
+.navbar li:nth-child(2):hover~.slider {
     right: 503px;
 }
-.navbar li:nth-child(3):hover ~ .slider{
+
+.navbar li:nth-child(3):hover~.slider {
     right: 392px;
 }
-.navbar li:nth-child(4):hover ~ .slider{
+
+.navbar li:nth-child(4):hover~.slider {
     right: 272px;
 }
 
-.navbar ul a{
+.navbar ul a {
     text-decoration: none;
     color: white;
     font-size: 1.2rem;
     font-weight: 600;
 }
 
-.floating-container{
+.floating-container {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -127,16 +129,19 @@
     align-items: center;
 }
 
-.floating-container div{
+.floating-container div {
     padding: 10px;
     border: 3px dotted white;
     border-radius: 50%;
 }
-.floating-container img{
+
+.floating-container img {
     border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
 }
 
-.right-container .right-img{
+.right-container .right-img {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,40 +149,66 @@
 }
 
 @media screen and (max-width: 576px) {
-    .content-container{
+    .content-container {
         flex-direction: column-reverse;
     }
-    
-    .left-container{
+
+    .left-container {
         width: 100%;
         height: 100%;
     }
-    
-    .left-container .logo{
-        margin-top: 1.2rem;
-        margin-left: 4rem;
+
+    .left-container .logo {
+        margin-top: 5rem;
+        margin-left: 2rem;
     }
 
-    .left-container .content{
+    .left-container .content {
         margin-top: 3rem;
         margin-left: 1rem;
     }
-    
-    .left-container h1{
+
+    .left-container h1 {
         font-size: 3.5rem;
         margin-bottom: 1rem;
     }
-    
-    .left-container p{
+
+    .left-container p {
         font-size: 1.2rem;
         max-width: 97%;
         margin-bottom: 1rem;
     }
-    
-    .left-container button{
+
+    .left-container button {
         margin-bottom: 2rem;
     }
+
+    .floating-container {
+        top: 70%;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .floating-container img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .right-container .right-img {
+        margin-top: 10%;
+        margin-bottom: 20%;
+    }
+
+    .right-container {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .navbar li {
+        padding: 1.5rem 1rem;
+    }
+    
+    .navbar .slider {
+        display: none;
+    }
 }
-
-
-
