@@ -86,9 +86,21 @@
 
 .navbar li {
     padding: 1.5rem 1.5rem;
+    border-top: 4px solid #996633;
 }
 
-.navbar .slider {
+.navbar li:first-child{
+    border-top: 4px solid #552c01;
+    border-radius: 0 0 30px 30px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.navbar li:hover{
+    border-top: 4px solid #552c01;
+    border-radius: 0 0 30px 30px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* .navbar .slider {
     border-top: 4px solid #552c01;
     border-radius: 0 0 50px 50px;
     background-color: rgba(255, 255, 255, 0.4);
@@ -109,7 +121,7 @@
 
 .navbar li:nth-child(4):hover~.slider {
     right: 272px;
-}
+} */
 
 .navbar ul a {
     text-decoration: none;
